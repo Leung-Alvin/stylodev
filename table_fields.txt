@@ -1,0 +1,4 @@
+id SERIAL PRIMARY KEY
+username TEXT NOT NULL
+text VARCHAR(20000) NOT NULL
+word_count INT
