@@ -78,19 +78,21 @@ def add_print(conn, table_name, author, paragraph):
     punctuation_ratio = punctuation/word_count
     lassdb.add_to_table(conn, table_name, (author, paragraph, cleaned, word_count, punctuation, punctuation_ratio, sentiment))
 
+def print_works(works):
+    for work in works:
+        print(work)
 
 if __name__ == '__main__':
     configurations = config.load_config()
     conn = lassdb.connect(configurations)
     cursor = conn.cursor()
     table_name = 'prints'
-    # lassdb.drop_table(conn, table_name)
+    lassdb.drop_table(conn, table_name)
     # lassdb.create_table(conn, table_name, FIELDS_FILE)
-    add_print(conn, table_name, "test_user_2", "I am awesome!!!")
+    # add_print(conn, table_name, "test_user_2", "I am awesome!!!")
     # lassdb.initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
-    works = lassdb.select_all_in_table(conn, table_name)
-    for work in works:
-        print(work)
+    # works = lassdb.select_all_in_table(conn, table_name)
+    # print_works(works)
     # lassdb.drop_table(conn, table_name)
     # sample = works[0][2]
     # print(sample)
