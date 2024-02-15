@@ -2,5 +2,7 @@ id SERIAL PRIMARY KEY
 username TEXT NOT NULL
 text VARCHAR(20000) NOT NULL
 text_no_stop VARCHAR(20000) NOT NULL
-word_count INT
+word_count INT NOT NULL
+punctuation INT NOT NULL
+punctuation_rate DECIMAL(5,2) NOT NULL
 sentiment TEXT NOT NULL

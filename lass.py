@@ -34,6 +34,9 @@ import string
 DIRECTORY = 'prints/survey'
 FIELDS_FILE = 'table_fields.txt'
 
+def count_punctuation(paragraph):
+    return sum([1 for char in paragraph if char in string.punctuation])
+
 def break_file_into_paragraphs(file_path):
     with open(file_path, 'r', encoding = "utf8") as file:
         text = file.read()
@@ -66,15 +69,28 @@ def analyze_sentiment(paragraph):
     else:
         return "neutral"
 
+
+def add_print(conn, table_name, author, paragraph):
+    cleaned = clean(paragraph)
+    punctuation = count_punctuation(paragraph)
+    sentiment = analyze_sentiment(cleaned)
+    word_count = len(paragraph.split())
+    punctuation_ratio = punctuation/word_count
+    lassdb.add_to_table(conn, table_name, (author, paragraph, cleaned, word_count, punctuation, punctuation_ratio, sentiment))
+
+
 if __name__ == '__main__':
     configurations = config.load_config()
     conn = lassdb.connect(configurations)
     cursor = conn.cursor()
     table_name = 'prints'
-    lassdb.drop_table(conn, table_name)
-    lassdb.initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+    # lassdb.drop_table(conn, table_name)
+    # lassdb.create_table(conn, table_name, FIELDS_FILE)
+    add_print(conn, table_name, "test_user_2", "I am awesome!!!")
+    # lassdb.initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
     works = lassdb.select_all_in_table(conn, table_name)
-    print(works[3])
+    for work in works:
+        print(work)
     # lassdb.drop_table(conn, table_name)
     # sample = works[0][2]
     # print(sample)

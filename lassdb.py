@@ -117,9 +117,12 @@ def load_directory(conn, table_name,directory):
         paragraphs = lass.break_file_into_paragraphs(file)
         for paragraph in paragraphs:
             cleaned = lass.clean(paragraph)
+            punctuation = lass.count_punctuation(paragraph)
+            word_count = len(paragraph.split())
             sentiment = str(lass.analyze_sentiment(cleaned))
-            count += add_to_table(conn, table_name, (lass.get_file_author(file), paragraph, cleaned, len(paragraph.split()),sentiment))
+            count += add_to_table(conn, table_name, (lass.get_file_author(file), paragraph, cleaned, word_count, punctuation, punctuation/word_count, sentiment))
     print("Added " + str(count) + " rows")
+
 
 def formatted_rows(rows):
     ret = ""
