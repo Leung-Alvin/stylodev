@@ -4,7 +4,7 @@ import textprint
 import lass
 
 DIRECTORY = 'prints/survey'
-FIELDS = 'table_fields.txt'
+FIELDS_FILE = 'table_fields.txt'
 
 def connect(config):
     try:
@@ -89,7 +89,8 @@ def formatted_print(connection, table_name):
 def select_from_table(connection, table_name, column, value):
     try:
         cursor = connection.cursor()
-        cursor.execute("SELECT * FROM " + table_name + " WHERE " + column + " = %s", (value,))
+        # cursor.execute("SELECT * FROM " + table_name + " WHERE " + column + " ILIKE %s", (value,))
+        cursor.execute("SELECT * FROM " + table_name + " WHERE " + column + " ILIKE "+ "'%" + value + "%'")
         rows = cursor.fetchall()
         cursor.close()
         print("Selected " + str(cursor.rowcount) + " rows")
@@ -151,6 +152,13 @@ def get_parameters(file):
             columns.append(line.split()[0])
     return columns
 
+def initialize_sample_table(connection, table_name, file, directory):
+    create_table(connection, table_name, file)
+    if select_all_in_table(connection, table_name) == []:
+        load_directory(connection, directory)
+    else:
+        print("Table already has data")
+
 if __name__ == '__main__':
     configurations = config.load_config()
     conn = connect(configurations)
@@ -179,21 +187,26 @@ if __name__ == '__main__':
     # print('---')
     # print(part==table_sql)
 
+    initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+    # select_all_in_table(conn, table_name)
+    # drop_table(conn, table_name)
+    
     # create_table(conn, table_name, FIELDS)
+
 
     # load_directory(conn, DIRECTORY)
 
     # print(formatted_print(conn, table_name))
 
-    # works = select_from_table(conn, table_name, 'username', 'kbettridge')
+    works = select_from_table(conn, table_name, 'username', 'ale')
 
     # delete_from_table(conn, table_name, 'username', 'aleung')
     
-    # print(formatted_rows(works))
+    print(formatted_rows(works))
 
     # print(select_all_in_table(conn, table_name)[3])
 
-    drop_table(conn, table_name)
+    # drop_table(conn, table_name)
 
     conn.commit()
     cursor.close()
