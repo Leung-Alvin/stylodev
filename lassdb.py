@@ -70,6 +70,7 @@ def select_all_in_table(connection, table_name):
 
 def add_to_table(connection, table_name, input_params):
     parameters = " (" + ', '.join(get_parameters('table_fields.txt')) + ") VALUES (" + ', '.join(['%s' for i in range(len(get_parameters('table_fields.txt')))]) + ")"
+    # print(input_params)
     try:
         cursor = connection.cursor()
         cursor.execute("INSERT INTO " + table_name + parameters, input_params)
@@ -78,6 +79,7 @@ def add_to_table(connection, table_name, input_params):
         return cursor.rowcount
     except (psycopg2.DatabaseError, Exception) as error:
         print(error)
+        # print(parameters)
 
 def formatted_print(connection, table_name):
     contents = select_all_in_table(connection, table_name)
@@ -108,13 +110,15 @@ def delete_from_table(connection, table_name, column, value):
     except (psycopg2.DatabaseError, Exception) as error:
         print(error)
 
-def load_directory(conn, directory):
+def load_directory(conn, table_name,directory):
     files = textprint.all_files(directory)
     count = 0
     for file in files:
         paragraphs = lass.break_file_into_paragraphs(file)
         for paragraph in paragraphs:
-            count += add_to_table(conn, table_name, (lass.get_file_author(file), paragraph, len(paragraph.split()),0))
+            cleaned = lass.clean(paragraph)
+            sentiment = str(lass.analyze_sentiment(cleaned))
+            count += add_to_table(conn, table_name, (lass.get_file_author(file), paragraph, cleaned, len(paragraph.split()),sentiment))
     print("Added " + str(count) + " rows")
 
 def formatted_rows(rows):
@@ -155,9 +159,10 @@ def get_parameters(file):
 def initialize_sample_table(connection, table_name, file, directory):
     create_table(connection, table_name, file)
     if select_all_in_table(connection, table_name) == []:
-        load_directory(connection, directory)
+        load_directory(connection, table_name, directory)
     else:
         print("Table already has data")
+
 
 if __name__ == '__main__':
     configurations = config.load_config()
@@ -187,7 +192,9 @@ if __name__ == '__main__':
     # print('---')
     # print(part==table_sql)
 
-    initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+    # initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+
+    testy(conn)
     # select_all_in_table(conn, table_name)
     # drop_table(conn, table_name)
     
@@ -198,11 +205,11 @@ if __name__ == '__main__':
 
     # print(formatted_print(conn, table_name))
 
-    works = select_from_table(conn, table_name, 'username', 'ale')
+    # works = select_from_table(conn, table_name, 'username', 'ale')
 
     # delete_from_table(conn, table_name, 'username', 'aleung')
     
-    print(formatted_rows(works))
+    # print(formatted_rows(works))
 
     # print(select_all_in_table(conn, table_name)[3])
 

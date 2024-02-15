@@ -1,5 +1,6 @@
 id SERIAL PRIMARY KEY
 username TEXT NOT NULL
 text VARCHAR(20000) NOT NULL
+text_no_stop VARCHAR(20000) NOT NULL
 word_count INT
-test INT
+sentiment TEXT NOT NULL
