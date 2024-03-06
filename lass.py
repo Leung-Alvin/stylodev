@@ -2,28 +2,26 @@ import lassdb
 import config
 import nltk
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+# try:
+#     nltk.data.find('tokenizers/punkt')
+# except LookupError:
+#     nltk.download('punkt')
 
-try:
-    nltk.data.find('vader_lexicon')
-except LookupError:
-    nltk.download('vader_lexicon')
+# try:
+#     nltk.data.find('vader_lexicon')
+# except LookupError:
+#     nltk.download('vader_lexicon')
 
-try:
-    nltk.data.find('stopwords')
-except LookupError:
-    nltk.download('stopwords')
+# try:
+#     nltk.data.find('stopwords')
+# except LookupError:
+#     nltk.download('stopwords')
 
-try:
-    nltk.data.find('wordnet')
-except LookupError:
-    nltk.download('wordnet')
+# try:
+#     nltk.data.find('wordnet')
+# except LookupError:
+#     nltk.download('wordnet')
 
-# nltk.download('punkt')
-# nltk.download('vader_lexicon')
 
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
@@ -78,21 +76,46 @@ def add_print(conn, table_name, author, paragraph):
     punctuation_ratio = punctuation/word_count
     lassdb.add_to_table(conn, table_name, (author, paragraph, cleaned, word_count, punctuation, punctuation_ratio, sentiment))
 
+
 def print_works(works):
     for work in works:
-        print(work)
+        print(str(work)+"\n")
 
 if __name__ == '__main__':
     configurations = config.load_config()
     conn = lassdb.connect(configurations)
     cursor = conn.cursor()
     table_name = 'prints'
-    lassdb.drop_table(conn, table_name)
+    # lassdb.drop_table(conn, table_name)
     # lassdb.create_table(conn, table_name, FIELDS_FILE)
     # add_print(conn, table_name, "test_user_2", "I am awesome!!!")
-    # lassdb.initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+    lassdb.initialize_sample_table(conn, table_name, FIELDS_FILE, DIRECTORY)
+    x = 4
+    while x != "0":
+        x = input("Enter 0 to exit" + "\n" + "Enter 1 to view all" + "\n" + "Enter 2 to choose name" + "\n" + "Enter 3 to choose sentiment" + "\n" + "Enter 4 to submit text" + "\n")
+        if x == "1":
+            works = lassdb.select_all_in_table(conn, table_name)
+            print_works(works)
+        elif x == "2":
+            name = input("Enter name: ")
+            works = lassdb.select_from_table(conn, table_name, "username", name)
+            print_works(works)
+        elif x == "3":
+            sentiment = input("Enter sentiment: ")
+            works = lassdb.select_from_table(conn, table_name, "sentiment", sentiment)
+            print_works(works)
+        elif x == "4":
+            name = input("Enter name: ")
+            paragraph = input("Enter paragraph: ")
+            add_print(conn, table_name, name, paragraph)
+            work = lassdb.select_from_table(conn, table_name, "username", name)[len(lassdb.select_from_table(conn, table_name, "username", name))-1]
+            print(work)
+
     # works = lassdb.select_all_in_table(conn, table_name)
     # print_works(works)
+
+    #0for work in works:
+    #    print(work)
     # lassdb.drop_table(conn, table_name)
     # sample = works[0][2]
     # print(sample)
