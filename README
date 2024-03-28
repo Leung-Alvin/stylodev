@@ -1,0 +1,9 @@
+Contact Alvin for the prints directory, which stores all the data needed to run anything.
+
+The database.ini file is missing and can be created to connect to the database. The file should be in the following format:
+
+[postgresql]
+host=
+database=
+user=
+password=
