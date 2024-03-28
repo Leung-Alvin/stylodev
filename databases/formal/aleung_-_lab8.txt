@@ -1,0 +1,208 @@
+﻿Alvin Leung
+William Kozlowski
+Physics 181L
+29 November 2022
+Lab #8: Ratio of Charge to Mass (e/m) for the Electron
+Objective:
+Through measurements of the deflection of electrons through a magnetic field, determine the ratio of charge to mass of a single electron.
+
+
+Theory:
+The electron was discovered in 1897 by J.J Thompson. He determined the charge to mass ratio of the electron using an apparatus consisting of a cathode ray tube and an applied magnetic field. Regarding the apparatus, a uniform magnetic field is produced from a Helmholtz coil and a discharge tube is used to measure the ratio by being placed inside the magnetic field caused by the Helmholtz coil. Within the discharge tube, there is an electron gun that is filled with low-pressure Helium. When the electrons collide with the Helium, a trace is drawn in light. On top of producing this light, the discharge tube also has a way of measuring the diameter of the light.
+The electron gun is used to accelerate electrons through an electromagnetic field and using an electric potential between the cathode and anode. Using the law of conservation of energy, the velocity of the electron can be calculated. When electrons travel through a uniform magnetic field, they experience the Lorentz Force. If the electrons move perpendicular, then the Lorentz Force will force the electrons to move in a circular path and is therefore a centripetal force. 
+Regarding specifically the Helmholtz Coil, an electrical current is applied to the two coils which creates a uniform magnetic field according to Bio-Savart’s Law, which defines the relationship between the magnetic flux density in regards to the current and radius of wire. When there are variable turns of wire in the coils, the magnetic field is scaled by variable times.
+Procedure:
+The equipment required for this lab includes an e/m apparatus, a 0-500V power supply, a 6V power supply, 15V Helmholtz coil power supply, banana-plug patch-cords, a compass, and a bar magnet. To begin, connect the 6V power supply to the heater terminal of the e/m apparatus. Next, connect the 0-500V power supply to the B-power terminal on the e/m apparatus. Then, connect the Helmholtz coil power supply to the coil power supply terminals on the e/m apparatus. After the setup, minimize the voltage of the B-power supply and raise the voltage when the cathode glows red. Now, slowly increase the voltage of the coil-power supply until the electron beam is circular. After the circular beam of light appears, check its polarity using the magnetic compass.
+        Use the voltmeter and ammeter that are part of the power supplies and set the current for the Helmholtz coil to a fixed value. Measure the current and the radius of the electron beam for five different voltages. From the measurements, attempt to approximate R. Afterwards, set the B-voltage to a mixed value and measure the radius for the electron beam for five different currents.
+
+
+Equations:
+
+
+Law of Conservation of Energy
+eV = 0.5mv^2
+e = elementary electrical charge of the electron [C]
+V = electric potential (V)
+m = mass (kg)
+v = velocity (m/s)
+
+
+Lorentz Force
+FB = -e (v X B)
+FB = Lorentz Force (N)
+e = elementary electrical charge of the electron [C]
+v = velocity (m/s)
+B = Magnetic Field (T)
+
+
+Centripetal Force
+Fc = mv^2/R
+Fc = Centripetal Force (N)
+m = mass (kg)
+v = velocity (m/s)
+R = Radius (m)
+
+
+Charge to Mass Ratio Equation
+e/m = 2v/ (B^2R^2)
+e/m = charge to mass ratio (C/kg)
+v = velocity (m/s)
+B = Magnetic Field (T)
+R = Radius (m)
+
+
+Biot-Savart’s Law for Helmholtz Coil
+B = 8/(5sqrt(5))Iu0/r
+B = Magnetic field (T)
+I = current (A)
+u0 = Magnetic Constant
+r = Radius of wire (m)
+
+
+
+
+Data:
+Part I
+
+
+Constant Current: 1.7A
+Voltage (V)
+	Radius (m)
+	Radius Squared (m^2)
+	432
+	0.0525
+	0.00275625
+	400
+	0.05
+	0.0025
+	330
+	0.045
+	0.002025
+	259
+	0.04
+	0.0016
+	203
+	0.035
+	0.001225
+	
+
+M = 151505 V/m^2
+M = (B^2/2) (e/m)
+B = 7.9 * 10^-4 *I Wb/m^2 = 7.9*10^-4 * 1.7 = 0.001343 Wb/m^2
+151505 = (0.001343^2/2) (e/m)
+151505/((0.001343^2/2)) = e/m = 1.6800 * 10^11 C/kg
+
+
+Part II
+
+
+Constant Voltage: 300V
+
+
+Current (A)
+	Current squared (A^2)
+	Radius (m)
+	Radius^-2 (m^-2)
+	1.33
+	1.7689
+	0.055
+	330
+	1.43
+	2.0449
+	0.0525
+	362
+	1.49
+	2.2201
+	0.05
+	400
+	1.56
+	2.4336
+	0.0475
+	443
+	1.64
+	2.6896
+	0.045
+	493
+	
+
+M = 5.44 * 10^-3 Am^2
+M = (2V / (6.24*10^-7)) (m/e)
+V = 300V
+5.44*10^-3 = (2(300))/ (6.24*10^-7) (m/e)
+5.44*10^-3 / ((2(300))/ (6.24*10^-7)) = m/e
+(5.44*10^-3 / ((2(300))/ (6.24*10^-7))) ^-1 = e/m = 1.7675*10^11 C/kg
+
+
+
+
+% Difference = |V1 - V2| / [(V1+V2)/2] * 100
+
+
+Part I
+ 
+(1.7588*10^11 - 1.6800 * 10^11) /((1.7588*10^11 + 1.6800 * 10^11)/2) * 100 = 4.58%
+
+
+Part II
+
+
+(1.7675*10^11 - 1.7588*10^11)/ ((1.7675*10^11 + 1.7588*10^11)/2)*100 = 0.493%
+
+
+Notes:
+Do not allow voltage to exceed 400V
+B = 7.9 * 10^-4 *I Wb/m^2
+
+
+
+
+Computation:
+See Data and Post-Lab Questions
+
+
+
+
+Post-Lab Questions:
+
+
+1. The Helmholtz coils heating up over time could have affected the currents flowing inside them (higher temperature, means lower resistance)  and therefore the magnetic field induced for the beam of light is also changed. This can cause a change in the curve of the light. In addition, the Helium gas could also have heated up due to extensive collision with the electron gun. This increase of temperature could change the pressure and the system inside the glass chamber, which affects the curve of the beam because the pressure of the gas is assumed to be static for accurate measurements.
+2. The mass of a proton is much higher than that of an electron, which affects the charge to mass ratio. In addition, the configuration of the anode and cathode would have to be reversed in order to create an electric potential, where the protons would want to move in a straight line through the Helium gas. The curve of the circular path created would also be different because the charge of the proton is opposite of that of an electron.
+
+
+3. eV = 0.5mv^2
+v = sqrt(2eV/m)
+e = 1.6022 * 10^-19 C
+V = 100 V
+m = 9.1094 * 10^-31 kg
+v = 5931007.527 m/s
+
+
+
+
+
+
+
+
+4. e/m for part I:
+1.68 * 10^11 C/kg
+
+
+e = 1.602*10^-19
+
+
+        (1.602*10^-19)/m = 1.68*10^11
+
+
+        m = (1.602*10^-19)/(1.68*10^11)
+m = 9.54 * 10^-31 kg
+
+
+e/m for part II:
+1.77 * 10^11 C/kg
+
+
+e = 1.602*10^-19
+
+
+(1.602*10^-19)/m = 1.77*10^11
+(1.602*10^-19)/(1.77*10^11) = m = 9.05*10^-31 kg

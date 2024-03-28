@@ -1,0 +1,46 @@
+﻿Raymond Pai
+routerdoc86@gmail.com | 702-606-0173
+Education 
+________________
+
+
+University of Nevada, Reno                                                                      Expected Graduation: May 2024
+Bachelors in computer science and engineering Undergraduate
+GPA: 3.687
+Dean’s List of Spring 2021
+Leadership Experience
+________________
+SkillsUSA | Las Vegas, Nevada                                                                           September 2016 - April 2019
+* Competed in a skills competition with a partner regarding Web Design
+* Competed in a Leadership competition regarding Interviews and Job Skill Demonstration
+Awards
+________________
+CTE Certification                                                                                                            May 2019
+* CTE certified for Web Design
+* CTE certified for Graphic Design
+* CTE certified for Video Production
+Technical Skills 
+________________
+* Programming Languages:  C/C++, C#, Python.
+* Web Development Application Skills: HTML, CSS.  
+* Knowledge of Object-Oriented Programming, Data Structures, Algorithms, and basics in Operating Systems.
+* Adobe Proficient: Adobe Photoshop, Adobe Illustrator, and Adobe Premiere Pro.
+* Proficient in Microsoft Office Applications, such as Word, PowerPoint, and Excel.
+* Hardware skills: Raspberry Pi and Arduino.
+* Foreign Language: fluent in Mandarin.
+* Basic knowledge and experience using the Linux/Unix API using WSL. 
+* IDE Experience: Visual Studio Code. 
+Project Experience
+________________
+C# Linked List and Server WebSocket                                                                               
+* Created a Linked List using C#, which gave me valuable insight into language syntax and dynamic memory storage. In addition, I have created a Server WebSocket that allows communication between machines.
+Bookstore Program                                                                        
+* Created a bookstore program to manage and checkout books using Object Oriented concepts in C++ such as Encapsulation, Inheritance, and Polymorphism.
+Traveling Salesman Problem Program                                                                     
+* Created a program to solve a Traveling Salesman Problem by finding all possible routes across five different cities and choosing the shortest path using C++ and knowledge of a Graph Data Structure, implemented using an adjacency matrix.
+Swamp Cooler
+* Created a swamp cooler from an Arduino kit that contained working components as well as constructing a circuit with all necessary components to work in tandem with code, using an Arduino IDE
+* Collaborated with two teammates, which enabled me to effectively work in a group.
+Operating System Projects
+* Stripped down Shell Program in C using the UNIX/Linux subsystem with WSL. 
+* Simulated an Operating System Process Scheduling program using Shortest Remaining First and Round Robin Sort schedulers, written in Python.

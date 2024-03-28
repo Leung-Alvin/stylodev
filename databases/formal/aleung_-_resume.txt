@@ -1,0 +1,40 @@
+﻿Alvin Leung
+aleung@nevada.unr.edu | +1 (775) 300-8289
+linkedin.com/in/leungalvin2024 | github.com/Leung-Alvin
+Education
+University of Nevada, Reno – Reno, NV        Aug 2021 – Present
+* B.S. in Computer Science & Engineering, Minor in Big Data, Minor in Statistics
+* Cumulative GPA: 4.00 | Expected Graduation in Fall 2024
+* Consecutive Dean’s List for Computer Science and Engineering as of Fall 2021
+Experience
+Systems Administrator - Dean College of Engineering, University of Nevada, Reno        May 2023 – Present
+* Providing end-user support and updating servers and services critical for research and lectures.
+* Administering multiple HPC and VM clusters and monitoring network storage and usage.
+* Implementing scripts and software for automation \and for enrollment of UNR students.
+Data Science for Fire Science – Undergraduate Research Opportunity Program        Mar 2023 – Present
+* Examining and modeling California fires from the 1970s to 2018 to quantify behavior.
+* Determining environmental and climate variables that drive the probabilities of extreme fires.
+* Applying the Generalized Pareto, lognormal, and exponential distributions to fit data.
+* Analyzing data in R and utilized standard tests of significance, density maps, and regression.
+Projects
+Doodle Chad – Hackathon Machine Learning Project        Apr 2023
+* Designed in Python with a pre-trained Keras-TensorFlow model to predict sketch objects.
+* Trained models using AWS Sagemaker and other services via Amazon Web Service.
+* Reconstructed raw user input into Matplotlib graphs for computation and visualization.
+* Created using OpenCV, Django, Native HTML/JS/CSS, and Flask for the API.
+AI Artist – Hackathon Cloud Computing Project        Apr 2022
+* Designed in Python to explore images and produce artwork in less than 12 hours.
+* Implemented the Hill-Climbing Algorithm to replicate user-uploaded images by random shapes.
+* Created using OpenCV and Native HTML/JS/CSS with Bootstrap.
+Skills
+Languages: Python, R, C++, C, SQL, Bash, Powershell, Java, HTML, CSS, Javascript
+Operating Systems: Linux (WSL2, Debian, Ubuntu), Windows 10/11
+Technologies: Scikit-learn, TensorFlow-Keras, Pandas, Matplotlib, Seaborn, NumPy, Jupyter, OpenCV, ggplot2, Nortest, QGIS/GDAL, Flask, NodeJS, Excel, Minitab, AWS Sagemaker
+Relevant Knowledge: Modeling and Regression, Statistical Computing, Data Mining, Linear Algebra, Multivariate Calculus, Object Oriented Programming, Data Structures and Algorithms, Software Engineering, Database Management Systems, Deep Learning, Natural Language Processing, Computer Vision, Computer Organization, Operating Systems
+Engagement
+Director of Programming - Association for Computing Machinery (ACM)        Aug 2021 – Present
+* Connecting with sponsors for club funding, event planning, and industrial outreach.
+* Won 2nd Place (Spr 2022) and 4th Place (Spr 2023) at the Biggest Little Hackathon at UNR.
+Draft Advisor/Captain - Nevada Esports Silver League        Aug 2021 – Jun 2023
+* Advised as draft captain and developed scouting reports on opponent team strategies for 4 splits.
+* Utilized global and local data and statistics in strategic planning, increasing team win rate.

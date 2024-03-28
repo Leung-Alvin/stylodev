@@ -1,0 +1,39 @@
+﻿Alvin Leung
+1660 Arboleda Drive
+Reno, NV 89521
+
+
+March 28, 2023
+
+
+Gabrielle Bachand
+1664 N Virginia Street
+Reno, NV 89557
+
+
+Dear Ms Bachand:
+
+
+Thank you for taking your time to read this letter. The following will detail the professional and ethical impacts that self-driving mechanisms in cars have in our current era. Self-driving cars are a new form of transportation that has become popular in the recent decade, combining powerful machine learning with driving in order to provide a new form of driverless transportation. This surge of popularity has led to an increasing focus of the Autonomous Vehicle Industry Association (AVIA) for self-driving cars. Autonomous cars are also connected with the Society of Automotive Engineers (SAE), who regulate automobiles in general. In addition to these professional ties, self-driving cars are on the heavy critique for their ethical dilemmas such as decision making and hacking concerns, both of which engineers have to navigate when programming and designing driverless cars.
+
+
+Self-driving cars are professionally regulated by the Autonomous Vehicle Industry Association (AVIA), which helps lawmakers, regulators, and the public in developing and promoting policies so that autonomous vehicles like self-driving cars can be helpful and safe. The AVIA has helped the US House pass the SELF DRIVE Act, which garnered bipartisan support. The SELF DRIVE Act helped speed up the safe adoption of self-driving cars and prevented states from controlling their regulation, which made it easier for people to obtain and drive these self-driving cars. In addition, the AVIA supports ongoing development on technical standards in order to make autonomous vehicles safe. These developments all comply with the National Highway Traffic Safety Administration (NHTSA). In general, self-driving cars have become more safe and used because of the help of these professional and governmental associations.
+
+
+Another influential organization on self-driving cars is the Society of Automotive Engineers (SAE). As a form of automotive vehicle, it can be no surprise that self-driving cars, as cars, are regulated by organizations that regulate cars already. In 2014, the SAE released the Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles, which categorizes driving automation on several levels from level 0: “No Driving Automation” to level 5: “Full Driving Automation”. This text has been the autonomous vehicle industry’s most cited source as the document helps standardize what features are required for autonomous vehicles. The SAE has also partnered with the International Organization for Standardization (ISO) in order to keep the taxonomy manual available internationally and in multiple languages in hopes to promote the global mobility community for autonomous vehicles. 
+
+
+In regards to the ethics of self-driving cars, errors are prone to happen, whether by drivers, pedestrians, or by the self-driving car itself. The decision making skills for navigating these errors of self-driving cars are questioned. The Moral Machine, a platform for surveying moral decisions made by AI, is commonly cited by industry standards for how a self-driving car should behave given two objectively evil decisions. Humans provide data in order to help industries survey the general acceptable choice between two evils. One such scenario is where a self-driving car is driving at legal speed but cannot stop in time and the only two outcomes is to either: drive into a pedestrian who is illegally crossing the road or to swerve into other law-abiding pedestrians on the sidewalks in order to prevent a collision. Canon I of the Engineer’s Code of Ethics is called into question for an engineer to “Hold paramount the safety, health, and welfare of the public”. In this scenario, both types of pedestrians are considered public citizens with their health and safety on the line. For this particular dilemma, self-driving cars will attempt to minimize the number of casualties and likely drive into the single pedestrian over several pedestrians. This is an engineered logic that is programmed into the self-driving mechanism and has sparked massive debate on the ethics and morals of self-driving car logic. In the act of trying to reduce harm to the public, a lesser harm is engineered in autonomous cars. Though harm to the public of any form should be avoided, engineers followed Canon I in minimizing harm to the public when there is no other option.
+
+
+In addition to moral dilemmas, self-driving cars are being scrutinized on their cybersecurity. With the increase of reliance on technology, self-driving cars become increasingly vulnerable to hacking and tampering from cybercriminals. Would an accident caused by hacking fall on the driver, the cybercriminal, or the engineer who made this vulnerable piece of technology. As is most hacking incidents, the company producing the technology often takes blame for the malfunctions despite criminal activity. Engineers often have to uphold Canon III and give public statements honestly on the faulty nature of their work. However, in 2010, security researchers discovered vulnerabilities that allowed hackers to fully take over millions of General Motors cars with the OnStar system installed. GM did not fix this issue until 2015, even though GM was privately told of this vulnerability in the spring of 2010 with the cars still in the market. This shows a failure of Canon III in providing honest statements to the public with regards to the safety of their cars and therefore a failure of Canon I in protecting the public’s safety, health, and welfare.
+
+
+With these incidents known, self-driving cars are well regulated by professional entities such as the AVIA and the SAE in hopes of improving safety and functionality for self-driving cars. However, self-driving cars also come with ethical and moral dilemmas on the question of what is an acceptable loss and what to do when hacking vulnerabilities are discovered. Engineers of self-driving cars have to grapple with their code of ethics when designing and programming self-driving mechanisms. Much obliged for taking the time to consider the professional and ethical impacts listed above, and hopefully this has provided clarity on the profound impacts that self-driving cars have on the twenty-first century.
+
+
+Sincerely,
+  
+
+Alvin Leung
+UNR Student (2024) | aleung@nevada.unr.edu | +1 (775) 300-8289
