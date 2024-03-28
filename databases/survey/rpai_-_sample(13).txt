@@ -1,0 +1,5 @@
+Hello!
+
+Just wanted to know if you have implementation for the camera animations, specifcally for the mouse. I can't seem to figure it out on my own.
+
+Any help is appreciated!

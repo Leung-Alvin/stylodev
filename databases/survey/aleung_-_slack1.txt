@@ -1,0 +1,20 @@
+ah ok
+I thought there was a different way we have to do that to a Domain Joined Linux
+the toggle is greyed out
+I logged into eadmin and I couldn't give him admin priv on his acc
+his room is 211 if they're in
+He needs two things: Admin privileges still and gpu detection
+Just plugged in the Ethernet, and it worked
+Eduroam does not propagate the kraid network license
+They were using WIFI instead of Ethernet
+I fixed the Solidworks issue
+it has an Nvidia GPU but it only sees teh Microsoft Display Adapter
+The computer has a problem with the windows partition not recognizing the GPU
+Hey Brandon
+But I can't make his acc an admin for some reason
+ur an admin on the linux partition of Chuong's computer
+G_G
+FLOW SIM WORKSSSSSSSS
+Hey Brandon, how do you add someone as an admin in linux domain? I saw you are an admin.
+connect it to palmer vlan to fuck with him lol
+We'll have to also look at the vlan necessary

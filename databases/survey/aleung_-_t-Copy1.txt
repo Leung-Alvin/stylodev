@@ -1,0 +1,2 @@
+Hey Nikhil, I will still need the DSL from those problems. It's not the code snippets that are the problem, but the language that they are written in uses Hacker Rank's language, and I was just gonna ask if you can just copy the DSL for one of your problems by logging onto the host account since the default snippets do not have that.
+Could you log into Hacker rank and find the dsl you used? The default is different than the ones shown by the 9 problems you sent me.

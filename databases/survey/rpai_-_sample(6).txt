@@ -1,0 +1,3 @@
+Erin is teaching the class. She wants us to  create a database of some topic but needs at least 6 tables. Then, using a Python Library or Framework to interact with it.
+everything is done in Python. Just I don't want to do front end stuff
+Not that I wouldn't be interested in it, but among other projects it might take a while

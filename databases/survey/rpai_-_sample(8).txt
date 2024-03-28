@@ -1,0 +1,19 @@
+Hello,
+
+This is my first time posting on this sub.
+
+I’m a college CS student learning about Data Structures and so far I’ve gotten only to Lists, Stacks, and Queues.
+
+However, each of them can be identifiable as being ADTs that have certain operations (I.e. Lists have a remove or insert operation or Stacks can pop or push operations) that fit in to one the following categories:
+
+Creators - creates new objects of a type but does not change the object itself
+
+Producers - create new objects from old objects
+
+Observers - takes objects and returns objects of a different type
+
+Modifiers - Changes Objects
+
+Within the three data structures I’ve learned so far, I want to know how do their operations fit into any one of the above categories.
+
+Thank you for the response!

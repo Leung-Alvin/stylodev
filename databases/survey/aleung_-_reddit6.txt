@@ -1,0 +1,82 @@
+Taric Rework Idea
+Seeing how S11 is playing out and that Taric is doing rather poorly compared to other support champions. I just decided it would be cool to provoke some discussion on changes to Taric's kit to remove power from his ultimate and into his basic kit. Here are some of my ideas! :D
+
+Several things I have noticed:
+
+- Taric has a huge mana problem with the deficit of raw mana-support items
+
+- Taric has a hard time being tanky due to items not fitting the bill (Other supports are tanky due to Aftershock and their kit, which means Taric's kit is simply not making him the tank he is supposed to be)
+
+- Taric is ultimately guided by his ultimate (pun intended) and not really anything else in his kit except Q spamming. I want to change that and add flavors to his kit so that people will pick him up more instead of just his ultimate.
+
+I feel that Taric's ultimate feels unrewarding to level up and generally bland to level up, so I decided to tie Taric's kit into the ultimate level-ups.
+
+I also wanted to make Taric more battle-reliant and always smacking people.
+
+Note: All values can be subjected to balancing and changes. I just decided on a number that I thought was balanced.
+
+
+
+QOL:
+
++ No longer stands still to cast spells (makes kiting easier)
+
++ Instant W cast on binded target if no champ is targeted
+
+
+
+Passive:
+
++ (3 / 4 / 5 / 6%) Missing Mana restored on auto, leveling up with Ultimate levels
+
+- Reduce armor scaling (15% -> 10/11/12/13%) (based on Ultimate levels) and base damage (25 - 93 -> 20 - 88)
+
+
+
+Q:
+
++ Caps out at four charges (to not waste 5 charges)
+
+- No longer levels up to 5 (levels up to four)
+
+- Increase Mana cost (70-110 -> 90-130)
+
+-Decrease heal per charge (30 per charge -> 20 per charge)
+
+
+
+W:
+
++ Armor passive doubles when W activates (armor bonus is lost if shield is broken)
+
++ Shield scaling now based on only Taric's max health and armor (8 - 12% -> 6-10%) + (30 to 50% of Taric's total armor)
+
++Hastens you and your ally by 11/12/13/14/15% movement speed (haste is lost if shield is broken)
+
+- Increase Mana cost (60 -> 70/75/80/85/90)
+
+
+
+E:
+
+- Stun duration decreased to 1 second
+
++ Stun duration increases to 2 seconds if both ally and Taric stuns the target.
+
+- Increase mana cost (60 -> 70/75/80/85/90)
+
+- Stun damage decreased (90 - 250 -> 60 - 220)
+
+
+
+R:
+
++ A level in R at the start of the game and levels up normally (similar to Karma)
+
++ Decrease cooldown (155 / 140 / 125/ 110)
+
++ Increase mana cost (100 -> 110/120/130/140)
+
++ Basic spells reduce ultimate's cooldown by 2/3/4/5 seconds
+
+- 2 second cast-time but 2 second damage reduction (15/30/45/60%) from all damage sources (physical, magical, true, ignite, etc).

@@ -1,0 +1,8 @@
+Simple Solar System Help
+Hello! First time posting here!
+
+I need some help fixing my code for a university project assignment. Currently, I have an update function that applies a matrix stack on multiple transformation on three objects: A sun, which is a pyramid, a planet, which is a cube, and a smaller cube, which is the moon. The sun seems to be fine when applying the transformation upon using the stack. However, subsequent objects, like the planet and moon, would rotate on the pyramid's rotation since its last rotation was applied.
+
+Currently, after I remove the axial rotation of the Pyramid, and applying the transformation for the planet, the planet wouldn't rotate around pyramid horizontally, rather it rotates around the pyramid's axial rotation, which is weird. This would also apply to the moon.
+
+So now, I'm trying to find help here to see if there is a solution to my problem.
