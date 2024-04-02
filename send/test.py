@@ -18,7 +18,7 @@ def test_on_file(file_path):
 
 
 if __name__ == "__main__":
-    text = "This week has been stressful as fuck. I really want; to stop doing all this stupid shit for my club and for the rest of the school year. I hate this school project too."
+    text = ""
     # test_on_text(text)
     
     test_on_file(os.getcwd() + "\\send\\test.txt")
